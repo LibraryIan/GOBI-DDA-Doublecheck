@@ -19,7 +19,7 @@ function walk(rootNode)
 function handleText(textNode) {
   textNode.nodeValue = replaceText(textNode.nodeValue);
 }
-
+// Here's a bunch of ISBNs to find and modify
 function replaceText(v)
 {
     v = v.replace(/\b9783959940016\b/g, '9783959940016******JSTOR DDA***************');
