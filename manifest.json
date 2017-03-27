@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+
+	"name": "JSTOR DDA DoubleCheck 3.23.17",
+    "short_name": "DDA GOBI tool",
+	"description": "JSTOR DDA DoubleChecker finds and flags titles in GOBI based on ISBNs in our JSTOR DDA holdings for UC Berkeley",
+	"version": "17.3.23.0",
+
+	"icons": {
+		"16": "images/DDADoubleCheck16.png",
+        "48": "images/DDADoubleCheck48.png",
+        "128": "images/DDADoubleCheck128.png"
+	},
+
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*.gobi3.com/*"],
+			"all_frames": true,
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
