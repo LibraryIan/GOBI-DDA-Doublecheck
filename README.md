@@ -4,6 +4,9 @@ Based on the <a href="https://github.com/ericwbailey/millennials-to-snake-people
 The extension looks for ISBN-13s from UC Berkeley's JSTOR holdings, and modifies the ISBN by adding a short string of asterisks and a text note to alert users that the title is part of the DDA profile, and should not be purchased until after the DDA pilot concludes. 
 The text note varies depending on if it is the print or ebook, based on the respective ISBN/eISBN (though not all records in the holdings file have a print ISBN attached). 
 
+In gobi3.com, make sure that preferences are set to display ISBN-13/EAN, not ISBN-10 (Options > My Preferences, under "Bibliographic Display Preferences"). If you are displaying ISBN-10, the extension will never work correctly as it only finds ISBN-13s to modify.
+ 
+
 
 Acknowledgments
 ===
