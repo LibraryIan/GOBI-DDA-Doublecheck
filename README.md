@@ -16,10 +16,10 @@ This is currently done manually by downloading our tab-delimited KBART holdings 
 I copy and paste the ISBN ("print_identifier") and eISBN ("online-identifier") into column A in respective sheets in a separate excel file, and use find & replace to remove the hyphens. 
 Each sheet has a formula that appends and prepends the relevant javascript around the ISBN in column A.
 For the eISBN, that looks like:
-="v = v.replace(/\b"&A1&"\b/g, '"&A1&"******JSTOR DDA***************');" 
+="v = v.replace(/\b"&A1&"\b/g, '"&A1&"****** JSTOR DDA***************');" 
 
 and for the print ISBN, we have:
-="v = v.replace(/\b"&A1&"\b/g, '"&A1&"****Alt Ed - eBook in JSTOR DDA**********');"
+="v = v.replace(/\b"&A1&"\b/g, '"&A1&"**** Alt Ed - eBook in JSTOR DDA**********');"
 
 The resultant columns are copied and pasted into the content_script.js, and the manifest is updated to reflect the date of the holdings that are being loaded in the title and version. I am sure there is a way to automate this, but thus far doing this 2-3 times a week has been fairly easy and low investment time-wise.
 
@@ -27,7 +27,7 @@ Because UCB has a smaller set of holdings in the DDA that does not include Proje
 
 Potential future modifications
 ===
--The KBART file also gives info about how you have access: via purchase as a firm order, purchase triggered via DDA, access via DDA, or Open Access. I have thought about adding a third string for those where a purchase has been triggered, so selectors would be able to see that info in GOBI
+-The KBART file also gives info about how you have access: via purchase as a firm order, purchase triggered via DDA, access via DDA, or Open Access. I have thought about adding a third string for those where a purchase has been triggered, so selectors would be able to see that info quickly in GOBI
 
 -Modify permissions to include gmail/bmail, so that slips in your inbox would also be modified (but would also modify other instances of the ISBN in your inbox...)
 
