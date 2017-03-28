@@ -1,4 +1,4 @@
-//Credit to Eric Bailey of Millenials to Snake People (https://github.com/ericwbailey/millennials-to-snake-people)
+//Credit to Eric Bailey's Millenials to Snake People (https://github.com/ericwbailey/millennials-to-snake-people)
 function walk(rootNode)
 {
     // Find all the text nodes in rootNode
