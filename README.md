@@ -1,10 +1,10 @@
 # GOBI-DDA-Doublecheck
 Based on the <a href="https://github.com/ericwbailey/millennials-to-snake-people">Millennials to Snake People</a> extension, this extension modifies gobi3.com to alert librarians and acquisitions staff when a title is part of a DDA profile to avoid duplicate purchases on JSTOR, other ebook platforms, or in print while the DDA is in place.
 
-<img src="https://cloud.githubusercontent.com/assets/26724062/25645211/c4d091a6-2f60-11e7-9b9c-e5c5942447ed.png" alt="GOBI example image" style="width:640px;height:400px;">
-
 The extension looks for ISBN-13s from UC Berkeley's JSTOR holdings and modifies the ISBN by adding a short string of asterisks and a text note to alert users that the title is part of the DDA profile and should not be purchased until after the DDA pilot concludes. 
 The text note varies depending on if it is the print or ebook, based on the respective ISBN/eISBN (though not all records in the holdings file have a print ISBN attached). Once installed via the Chrome store, the extension requires no additional input from the user and will only work on gobi3.com sites.
+
+<img src="https://cloud.githubusercontent.com/assets/26724062/25645211/c4d091a6-2f60-11e7-9b9c-e5c5942447ed.png" alt="GOBI example image" style="width:640px;height:400px;">
 
 In gobi3.com, make sure that preferences are set to display ISBN-13/EAN, not ISBN-10 (Options > My Preferences, under "Bibliographic Display Preferences"). If you are displaying ISBN-10 the extension will never work as it only finds ISBN-13s to modify.
 
