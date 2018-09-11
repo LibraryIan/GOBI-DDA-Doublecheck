@@ -12,7 +12,7 @@ At each update the manifest is updated to reflect the holdings date in the title
   
 Full disclosure: The extension is not 100% foolproof, as it only has the ISBNs of the version held by JSTOR. 
 
-Process for maintaning & updating for UC Berkeley (for other UC libraries as part of the CDL DDA Pilot)
+Process for maintaining & updating for UC Berkeley (for other UC libraries as part of the CDL DDA Pilot)
 ===
 This is currently done manually by downloading our tab-delimited KBART holdings file from <a href="http://about.jstor.org/holdings">http://about.jstor.org/holdings</a>, loading the .txt in excel, and filtering to only include 2017 titles (this will later need to include 2017 and 2018). 
 I copy and paste the ISBN ("print_identifier") and eISBN ("online-identifier") into column A in respective sheets in a separate excel file, and use find & replace to remove the hyphens. 
